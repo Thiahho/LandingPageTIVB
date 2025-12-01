@@ -1,0 +1,10 @@
+# Permitir que todos los motores de búsqueda indexen todo el sitio
+User-agent: *
+Allow: /
+
+# Optimizar rastreo - evitar archivos innecesarios
+Disallow: /_next/static/
+Disallow: /*.json$
+
+# Ubicación del sitemap para mejor indexación
+Sitemap: https://tu-dominio.com/sitemap.xml
