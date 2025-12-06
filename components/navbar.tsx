@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { WHATSAPP_URL } from "@/lib/data"
+import { useState, useEffect } from "react";
+import { WHATSAPP_URL } from "@/lib/data";
 
 const navLinks = [
   { label: "Servicios", href: "#servicios" },
@@ -9,19 +9,19 @@ const navLinks = [
   { label: "Proceso", href: "#proceso" },
   { label: "Sobre mí", href: "#sobre-mi" },
   { label: "Contacto", href: "#contacto" },
-]
+];
 
 export function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
@@ -32,8 +32,11 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <a href="#" className="text-xl font-bold text-foreground transition-transform hover:scale-105">
-          {"<Dev />"}
+        <a
+          href="#"
+          className="text-xl font-bold text-foreground transition-transform hover:scale-105"
+        >
+          {"<TIVB />"}
         </a>
 
         {/* Desktop Navigation */}
@@ -114,5 +117,5 @@ export function Navbar() {
         </div>
       </div>
     </header>
-  )
+  );
 }

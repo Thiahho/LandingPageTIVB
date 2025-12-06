@@ -64,19 +64,21 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "/tivbcanva2.webp",
         media: "(prefers-color-scheme: light)",
+        type: "image/webp",
       },
       {
-        url: "/icon-dark-32x32.png",
+        url: "/tivbcanva2.webp",
         media: "(prefers-color-scheme: dark)",
+        type: "image/webp",
       },
       {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/tivbcanva2.webp",
+        type: "image/webp",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/tivbcanva2.webp",
   },
 };
 
